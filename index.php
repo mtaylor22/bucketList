@@ -11,7 +11,9 @@ connect();
 	<title>ideaJar</title>
 	<meta name="description" content="ideaJar">
 	<meta name="author" content="Mitchell Taylor, Nick Bodiford">
+	<style>
 
+	</style>
   <!-- <link rel="stylesheet" href="css/styles.css?v=1.0">
 
   <!--[if lt IE 9]>
@@ -20,6 +22,9 @@ connect();
 </head>
 
 <body>
+	<div id="nav_bar">
+	</div>
+	<img src="jar_full.png">
   <!--<script src="js/scripts.js"></script> -->
 </body>
 </html>
