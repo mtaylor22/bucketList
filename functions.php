@@ -64,22 +64,21 @@ function getLoggedUser(){
 
 	Description: Get a list of all of the ideas from the user's selected jar.
 */
-function getJar($attributes){
+function getJar($jarName){
 
 	$resultArray = array();
 	connectToDatabase();
 	//Grab all of our ideas
 	$result = mysql_query("SELECT * FROM ideas") or die(mysql_error());	    
-    //For each individual idea, check if it belongs in our user's bucket and add it to result array if so
+    //For each individual idea, check if it belongs in our user's jar and add it to result array if so
     while( $ideaRow = mysql_fetch_array($result) ){
 		
-		$ideas = explode(",", $ideaRow['attr']);
+		$parentOfCurrent = $ideaRow['parent_jar'];
 
-		if( in_array( $attributes, $ideas) ){
+		if( $jarName == $parentOfCurrent ){
 			$resultArray[] = $ideaRow;
-		}
+		}		
 	}
-
 	return $resultArray; 
 }
 
@@ -93,7 +92,7 @@ function getJar($attributes){
 
 	Description :
 */
-function createIdea($ideaText, $username, $attributes){
+function createIdea($ideaText, $username, $parentJar){
 
 	//Connect to our database
 	connectToDatabase();
@@ -103,20 +102,17 @@ function createIdea($ideaText, $username, $attributes){
 	$user = mysql_fetch_array($result);
 
 	//Add our user to our attribute list and turn into comma seperated list
-	$attributes[] = $username;
-	$commaSeperatedAttr = implode(",", $attributes);
 
 	//Add our idea to the database
-	mysql_query("INSERT INTO ideas (idea, attr) VALUES('". $ideaText ."', '". $commaSeperatedAttr ."' ) ") or die(mysql_error());
+	mysql_query("INSERT INTO ideas (idea, parent_jar) VALUES('". $ideaText ."', '". $parentJar ."' ) ") or die(mysql_error());
 }
 
 //GET ALL JARS
 /*
-	jars[][] getAllJars(username);
+	jars[] getAllJars(username);
 	
 	Inputs : A user's ID aka their username
-	Output : A multi dimensional array, the first index references an array of the jar queries, 
-			 the second index references the names of the jars
+	Output : A list of all of the names of jars owned by our user
 */
 function getAllJars($username){
 
@@ -130,9 +126,7 @@ function getAllJars($username){
 	$result = mysql_query("SELECT * FROM users WHERE username = '".$username."' ") or die(mysql_error());
 	$user = mysql_fetch_array($result);
 
-	//Index 0 represents the queries, index 1 represents the names
-	$returnArray[0] = explode(",", $user['jar_queries']);
-	$returnArray[1] = explode(",", $user['jar_names']);
+	$returnArray = explode(",", $user['jar_names']);
 
 	return $returnArray;
 }
@@ -147,11 +141,11 @@ function getAllJars($username){
 
 	Description :
 */
-function chooseIdea($attributes){
+function chooseIdea($jarName){
 	//Connect to our database
 	connectToDatabase();
 	//Call getJar with our user's currently selected jar
-	$currentJar = getJar($attributes);
+	$currentJar = getJar($jarName);
 	//Grab a random index from our list of ideas
 	$chosenIndex = array_rand($currentJar,1);
 	//Save idea with this index for return
@@ -180,7 +174,7 @@ function removeIdea($ideaID){
 	
 	Inputs : A string to represent our jar name and a list of attributes to add to the jar 
 */
-function createJar($username, $jarName, $jarQuery){
+function createJar($username, $jarName){
 
 	connectToDatabase();
 
@@ -188,18 +182,14 @@ function createJar($username, $jarName, $jarQuery){
 	$result = mysql_query("SELECT * FROM users WHERE username = '".$username."' ") or die(mysql_error());
 	$user = mysql_fetch_array($result);
 
-	$userJarQueries = explode(",", $user['jar_queries']);
 	$userJarNames = explode(",", $user['jar_names']);
 
-	$userJarQueries[] = $jarQuery;
 	$userJarNames[] = $jarName;
 
-	$commaSeperatedQueries = implode(",", $userJarQueries);
 	$commaSeperatedNames = implode(",", $userJarNames);
 
 	//Add our idea to the database
 	mysql_query("UPDATE users SET jar_names = '".$commaSeperatedNames."' WHERE username = '".$username."'") or die(mysql_error());
-	mysql_query("UPDATE users SET jar_queries = '".$commaSeperatedQueries."' WHERE username = '".$username."'") or die(mysql_error());
 }
 
 
@@ -209,28 +199,24 @@ function createJar($username, $jarName, $jarQuery){
 	
 	Inputs : A string of text that describes the idea, the user's ID, and attributes 
 */
-function deleteJar($username, $jarName, $jarQuery){
+function deleteJar($username, $jarName){
 
 	connectToDatabase();
 
 	$result = mysql_query("SELECT * FROM users WHERE username = '".$username."' ") or die(mysql_error());
 	$user = mysql_fetch_array($result);
-
-	$userJarQueries = explode(",", $user['jar_queries']);
+	
 	$userJarNames = explode(",", $user['jar_names']);
 
 	$removalIndex = array_search($jarName, $userJarNames);
 	if ($removalIndex != false){
     	unset($userJarNames[$removalIndex]);
-    	unset($userJarQueries[$removalIndex]);
 	}
 
-	$commaSeperatedQueries = implode(",", $userJarQueries);
 	$commaSeperatedNames = implode(",", $userJarNames);
 
 	//Add our idea to the database
 	mysql_query("UPDATE users SET jar_names = '".$commaSeperatedNames."' WHERE username = '".$username."'") or die(mysql_error());
-	mysql_query("UPDATE users SET jar_queries = '".$commaSeperatedQueries."' WHERE username = '".$username."'") or die(mysql_error());
 
 }
 
@@ -248,4 +234,5 @@ function deleteJar($username, $jarName, $jarQuery){
 	
 	Inputs : A string of text that describes the idea, the user's ID, and attributes 
 */
+
 ?>
