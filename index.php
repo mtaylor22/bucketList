@@ -1,16 +1,16 @@
 <?php
-mysql_connect("localhost", "admin", "ping") or die(mysql_error());
-mysql_select_db("jar_project") or die(mysql_error());
+require 'functions.php';
+connect();
 ?>
 <!doctype html>
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
 
-  <title>ideaJar</title>
-  <meta name="description" content="ideaJar">
-  <meta name="author" content="Mitchell Taylor, Nick Bodiford">
+	<title>ideaJar</title>
+	<meta name="description" content="ideaJar">
+	<meta name="author" content="Mitchell Taylor, Nick Bodiford">
 
   <!-- <link rel="stylesheet" href="css/styles.css?v=1.0">
 

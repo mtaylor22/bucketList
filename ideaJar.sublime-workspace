@@ -1,0 +1,729 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"render",
+				"render_template"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"open",
+				"openkuler"
+			],
+			[
+				"kuler",
+				"kulersIndex"
+			],
+			[
+				"color",
+				"colorsList"
+			],
+			[
+				"swa",
+				"swatchList"
+			],
+			[
+				"brighten",
+				"brightenRandom"
+			],
+			[
+				"g",
+				"g"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"lin",
+				"linkChar1"
+			],
+			[
+				"process",
+				"processBufferWipe"
+			],
+			[
+				"error",
+				"error_threshold"
+			],
+			[
+				"err",
+				"error_threshold"
+			],
+			[
+				"rend",
+				"render_template"
+			],
+			[
+				"youtub",
+				"YoutubePage"
+			],
+			[
+				"Last",
+				"LastFMDiagnostics"
+			],
+			[
+				"test_to",
+				"test_top_tracks"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "adduser.php",
+			"settings":
+			{
+				"buffer_size": 728,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "functions.php",
+			"settings":
+			{
+				"buffer_size": 158,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 495,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "login.php",
+			"settings":
+			{
+				"buffer_size": 940,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test.php",
+			"settings":
+			{
+				"buffer_size": 402,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: li",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Controin",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: dis",
+				"Package Control: Discover Packages"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Mitchell Taylor/Google Drive/ENDS 101/tests/goldsman.txt",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw2/list_statistics.c",
+		"/C/Users/Mitchell Taylor/AppData/Local/Packages/22f083fb-a174-410a-8836-2fcd8d4d51af_rq1m6pjr4758j/LocalState/dataFile.txt",
+		"/C/Users/Mitchell Taylor/Google Drive/ENDS 101/TBP_Team_33.html",
+		"/C/Users/Mitchell Taylor/Google Drive/ENDS 101/TBP_Team_31/TBP_Team_31.html",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 463/HW1/hw1p3/Report.txt",
+		"/C/Users/Mitchell Taylor/Google Drive/ENDS 101/TBP_Team_31/instructions.txt",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw2/barrier.data",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw3/prefix_sum.job",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw3/prefix_sum.data",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw3/prefix_sum.c",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/bucketList/index.php",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/bucketList/functions.php",
+		"/C/Users/Mitchell Taylor/Desktop/index.html",
+		"/C/Users/Mitchell Taylor/Desktop/bootstrap/index.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/bucketList/test.php",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/bucketList/adduser.php",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/bucketList/login.php",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw3/HW3.pdf",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw2/barrier.c",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw2/barrier.job",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw2/csce435.h",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw2/barrier.data2",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw2/list_minimum.c",
+		"/C/Program Files (x86)/Gow/licenses/Putty-License.txt",
+		"/C/Users/Mitchell Taylor/Downloads/finalworking2.txt",
+		"/C/Users/Mitchell Taylor/Downloads/finalworking.txt",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw2/list_minimum.data2",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw2/list_minimum.data",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 463/HW2/barrier.c",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 463/HW2/csce435.h",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 463/HW2/list_minimum.c",
+		"/C/Users/Mitchell Taylor/Google Drive/MKTG 409/Notes/mktl6.txt",
+		"/C/Users/Mitchell Taylor/Downloads/docs/config.txt",
+		"/C/Users/Mitchell Taylor/AppData/Local/Temp/Rar$DIa0.089/readme.txt",
+		"/C/Users/Mitchell Taylor/Google Drive/MKTG 409/Notes/mktl5.txt",
+		"/C/Users/Mitchell Taylor/Google Drive/MKTG 409/Notes/mktl4.txt",
+		"/C/Users/Mitchell Taylor/Google Drive/MKTG 409/Notes/mktl3.txt",
+		"/C/Users/Mitchell Taylor/Google Drive/MKTG 409/Notes/mktl2.txt",
+		"/C/Users/Mitchell Taylor/Google Drive/MKTG 409/Notes/mktl1.txt",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw1/compute_pi_return6",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw1/results.txt",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw1/results3.txt",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw1/results2.txt",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw1/compute_pi.job",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw1/compute_pi_return03",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 435/hw1/compute_pi_return05",
+		"/C/Users/Mitchell Taylor/Desktop/constants.txt",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 411/latexpointers.txt",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 411/latexskeleton.tex",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 411/latexexample.tex",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 411/latexexample2_given.tex",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/static/main.js",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/main.py",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/base.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/static/mcolor.js",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/stylesheets/print.css",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/add.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/mix.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/page.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/datapage.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/gallery.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/addblock.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/addimage.html",
+		"/C/Users/Mitchell Taylor/Google Drive/CSCE 411/index.html",
+		"/C/Users/Mitchell Taylor/Desktop/txt.txt",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/runescout/runescout/main.py",
+		"/C/Users/Mitchell Taylor/Google Drive/tenative schedue",
+		"/C/Users/Mitchell Taylor/Google Drive/antp.txt",
+		"/C/Users/Mitchell Taylor/Desktop/mom's.txt",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/this.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/aboutme.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/scheme.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/static/detectmobilebrowser.js",
+		"/C/Users/Mitchell Taylor/Desktop/mt.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/mobilepage.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/start.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/mobile.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/error.html",
+		"/C/Users/Mitchell Taylor/Downloads/detectmobilebrowser.middleware.py (1).txt",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/academic.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/static/tinycolor.js",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/contact.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/resume.html",
+		"/C/Users/Mitchell Taylor/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.IE5/2477PP3P/search[1].cfm",
+		"/C/Users/Mitchell Taylor/AppData/Roaming/Sublime Text 2/Packages/User/Csslisible.sublime-settings",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/static/progressbar.js",
+		"/C/Users/Mitchell Taylor/AppData/Roaming/Sublime Text 2/Packages/Indent XML/Default.sublime-commands",
+		"/C/Users/Mitchell Taylor/AppData/Roaming/Sublime Text 2/Packages/Indent XML/Default (Windows).sublime-keymap",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/designs.html",
+		"/C/Users/Mitchell Taylor/AppData/Roaming/Sublime Text 2/Packages/CodeFormatter/Default (Windows).sublime-keymap",
+		"/C/Users/Mitchell Taylor/AppData/Roaming/Sublime Text 2/Packages/Djaneiro/Settings/HTML (Django).sublime-settings",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/index.yaml",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/app.yaml",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/images/cover.jpg",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/static/jquery.js",
+		"/C/Users/Mitchell Taylor/Desktop/progressthing/html.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/progressbar_old.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/progressbar_newer.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/progressbar_css3.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/templates/progressbar.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/.gitattributes",
+		"/C/Users/Mitchell Taylor/AppData/Roaming/Sublime Text 2/Packages/Csslisible/Default (Windows).sublime-keymap",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/C315_P3/src/main.py",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/C315_P3/src/templates/band.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/C315_P3/src/app.yaml",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/mtaylor/mtaylor/favicon.ico",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/C315_P3/src/lib/lastFMpy.py",
+		"/C/Users/Mitchell Taylor/Downloads/Ableton Live 9 Suite 9.0.4 (Win 64 bit-io) [ChingLiu]/Patch/io.nfo",
+		"/C/Users/Mitchell Taylor/Downloads/Ableton Live 9 Suite 9.0.4 (Win 64 bit-io) [ChingLiu]/ChingLiu.Install.Notes.nfo",
+		"/C/ProgramData/Ableton/Live 9 Suite/Program/io.nfo",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/C315_P3/src/lib/facebook.py",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/C315_P3/src/templates/message.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/C315_P3/src/templates/localmap.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/C315_P3/src/stylesheets/print.css",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/C315_P3/src/templates/LastFMDiagnosticsPage.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/C315_P3/src/templates/map.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/C315_P3/src/templates/facebook.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/C315_P3/src/templates/base.html",
+		"/C/Users/Mitchell Taylor/AppData/Roaming/Sublime Text 2/Packages/Pretty JSON/Pretty JSON.sublime-settings",
+		"/C/Users/Mitchell Taylor/AppData/Roaming/Sublime Text 2/Packages/User/Pretty JSON.sublime-settings",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/C315_P3/src/templates/account.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/C315_P3/src/templates/lastFM.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/C315_P3/src/templates/logout.html",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/C315_P3/src/templates/register.html",
+		"/C/Users/Mitchell Taylor/AppData/Roaming/Sublime Text 2/Packages/Csslisible/readme.md",
+		"/C/Users/Mitchell Taylor/Documents/GitHub/C315_P3/src/templates/details.html",
+		"/C/Users/Mitchell Taylor/AppData/Roaming/Sublime Text 2/Packages/CSScomb/README.md"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"        ",
+			"</tr>",
+			"\\t",
+			"<tr>",
+			"\\n",
+			"prefix_sum_list",
+			"barrier_",
+			"rand",
+			" ",
+			"time \\(sec\\) = ",
+			"list size = ",
+			", ",
+			"Threads = ",
+			"Congratulations. Prefix sum computed correctly\\n",
+			"Congratulations. Prefix sum computed correctly",
+			"join",
+			"attr",
+			"PTHREAD_CREATE_JOINABLE",
+			"lock_barrier",
+			"mut",
+			"Congra",
+			"TBP_Team_33",
+			"33",
+			"int",
+			"margin-to",
+			"ns2",
+			"barrier time (sec) =   ",
+			", ",
+			"Threads = ",
+			"barrier time (sec) =   ",
+			", ",
+			"Threads = ",
+			"int",
+			"list_stdev",
+			"true_stdev",
+			"lock_stat",
+			"sum",
+			"stdev = ",
+			"mean",
+			"my_minimum",
+			"mean",
+			"cond_barrier",
+			"count",
+			"cond_barrier",
+			"lock_mean",
+			"minimum",
+			"find_minimum",
+			"time (sec) =   ",
+			"minimum = ",
+			", ",
+			"Threads = ",
+			"time \\(sec\\) =   ",
+			"minimum = ",
+			", ",
+			"Threads = ",
+			"rand",
+			"mutex",
+			"time \\(sec\\) =   ",
+			"error = ",
+			"pi =   ",
+			"Threads = ",
+			", ",
+			"Trials = ",
+			"time \\(sec\\) =   ",
+			"error = ",
+			"pi =   ",
+			"Threads = ",
+			", ",
+			"Trials = ",
+			"\"\\n",
+			"\"",
+			"\\n",
+			"]=",
+			"AcademicHandler",
+			"loadContent",
+			"datev",
+			"gallery",
+			"design",
+			"')",
+			"not",
+			"MainHandler",
+			"3699",
+			"panelIndex+1",
+			"panelIndex",
+			"open[",
+			"bigborder",
+			"panelIndex++",
+			"panelIndex",
+			"id=",
+			"block_{{forloop.counter}}_1",
+			"block_{{forloop.counter}}_0",
+			"blockcontainer_{{forloop.counter}}",
+			"open",
+			"PhotoUploadHandler",
+			"upload_photo",
+			"PhotoUploadFormHandler",
+			"image",
+			"get_data",
+			"\n      userDict = self.get_data(code)\n      self.render_template(page, userDict)",
+			"mix",
+			"AboutMeHandler",
+			"aboutme",
+			"about",
+			"Base",
+			"MainHan",
+			"//",
+			"class",
+			"AcademicHandler",
+			"AboutMeHandler",
+			"admin",
+			"render_templ",
+			"self.session",
+			"get_page_data",
+			"get_image_data",
+			"session.get",
+			"get_page_data",
+			"get_image_data",
+			"get_mixed_data",
+			"self.session.get(",
+			"session",
+			"session.get",
+			"self",
+			"bc",
+			".bc",
+			"full_frame_aboutme",
+			"'",
+			"MainHandler",
+			"upload_photo"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"\\t",
+			"</td></tr>",
+			"</td><td>",
+			"<tr><td>",
+			"</tr>\\n<tr>",
+			"",
+			"\\t",
+			"",
+			"TBP_Team_31",
+			"",
+			"\\t",
+			"",
+			"\\t",
+			"",
+			"list_statistics",
+			"lock_sum",
+			"stdev",
+			"my_sum",
+			"lock_stat",
+			"mean",
+			"find_statistics",
+			"",
+			"\\t",
+			"",
+			"\\t",
+			"",
+			"\\t",
+			"",
+			"\\t",
+			"",
+			"\";\\n",
+			"\"\\n",
+			"]=\"",
+			"block_{{forloop.counter}}_1{{page}}",
+			"block_{{forloop.counter}}_0{{page}}",
+			"blockcontainer_{{forloop.counter}}{{page}}",
+			"self.get_image_data",
+			"db",
+			"linkText[5]",
+			"linkText[4]",
+			"linkText[3]",
+			"border-top: 12",
+			"border-right: 4",
+			"transitional cell_",
+			"kulers",
+			"kulersTop",
+			".s",
+			".l",
+			"cell ",
+			"style1",
+			"defaultPanelName + panelIndex",
+			"realcontent",
+			"fetchurl",
+			"self.user_info['email_address']",
+			"closeandopen",
+			"(json.loads(lastFMpy.get_events_formatted(band)))",
+			"json.loads(lastFMpy.get_events_formatted(band))",
+			"json.load(lastFMpy.get_events_formatted(band))",
+			",\\n",
+			"distance",
+			"instnm",
+			"instnm\ninstnm\ninstnm\ninstnm\ninstnm",
+			"instnm\n",
+			"slideshow",
+			"firstIndex",
+			"getLastIndexOf",
+			"202020",
+			"dataSize",
+			"MQelapsed",
+			"MQtime2",
+			"MQtime1",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "adduser.php",
+					"settings":
+					{
+						"buffer_size": 728,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "functions.php",
+					"settings":
+					{
+						"buffer_size": 158,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.php",
+					"settings":
+					{
+						"buffer_size": 495,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "login.php",
+					"settings":
+					{
+						"buffer_size": 940,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "test.php",
+					"settings":
+					{
+						"buffer_size": 402,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 174.0,
+	"status_bar_visible": true
+}
