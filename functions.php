@@ -4,11 +4,11 @@
 
 //Connect to database
 /*
-	Input :
+	Input : None
 	
-	Output :
+	Output : None
 
-	Description :
+	Description : Connect to our project's database on the sql server.
 */
 function connectToDatabase(){
 		mysql_connect("localhost", "admin", "ping") or die(mysql_error());
@@ -17,11 +17,11 @@ function connectToDatabase(){
 
 //Verify Credentials
 /*
-	Input:
+	Input: A string to represent the entered username and a string to represent the entered password
 
-	Output:
+	Output: True if the credentials are valid and false if the credentials do not match any in the database.
 
-	Description:
+	Description: Verify that the username and password entered match a record in our user table.
 */
 function verifyCredentials($username, $password){
 	$query = "SELECT * FROM users where username = '". $username ."'"; 
@@ -43,9 +43,9 @@ function verifyCredentials($username, $password){
 /*
 	Input : None
 
-	Output : Our user's row from the user table
+	Output : The logged in user's row from the user table.
 
-	Description :
+	Description : Find the row from the user table of the user that is logged in.
 */
 function getLoggedUser(){
 	//If the user is logged in, fetch our user's row in the table and return it
@@ -59,8 +59,9 @@ function getLoggedUser(){
 
 //GET JAR
 /*
-	Return: A list of the ideas from the jar. Each entry in the list is a row from the idea table.
-	Input: A list of attributes needed to fetch the jar. It will be a list of attributes, but it will be a username for now.	   
+	Input : A list of attributes needed to fetch the jar. It will be a list of attributes, but it will be a username for now.	   
+	
+	Output : A list of the ideas from the jar. Each entry in the list is a row from the idea table.
 
 	Description: Get a list of all of the ideas from the user's selected jar.
 */
@@ -86,33 +87,31 @@ function getJar($jarName){
 /*
 	void createIdea(ideaText, username, attributes);
 	
-	Inputs : 
+	Inputs : A string to represent a description of the idea, and a string to represent the parent jar of the idea
+			 being added to the database.
 
-	Outputs :
+	Outputs : None
 
-	Description :
+	Description : Create an entry in the ideas table with a description of the idea along with the name of the jar the
+				  idea belongs in.
 */
-function createIdea($ideaText, $username, $parentJar){
+function createIdea($ideaText, $parentJar){
 
 	//Connect to our database
 	connectToDatabase();
-
-	//Select the user passed into the function, it should be the logged in user of the session
-	$result = mysql_query("SELECT * FROM users WHERE username = '".$username."' ") or die(mysql_error());
-	$user = mysql_fetch_array($result);
-
-	//Add our user to our attribute list and turn into comma seperated list
 
 	//Add our idea to the database
 	mysql_query("INSERT INTO ideas (idea, parent_jar) VALUES('". $ideaText ."', '". $parentJar ."' ) ") or die(mysql_error());
 }
 
 //GET ALL JARS
-/*
-	jars[] getAllJars(username);
-	
-	Inputs : A user's ID aka their username
+/*	
+	Input : A user's ID aka their username
+
 	Output : A list of all of the names of jars owned by our user
+
+	Description : Given a username, this will produce the user's "jar ownership list". Each element
+				  in a jar ownership list will be a string representing the name of a jar.
 */
 function getAllJars($username){
 
@@ -133,13 +132,12 @@ function getAllJars($username){
 
 //CHOOSE IDEA
 /*
-	void chooseIdea(string attributes);
-	
-	Inputs : A comma seperated list of attributes so that a proper idea is chosen
+	Inputs : The name of the jar from which to randomly choose ideas from.
 
-	Output :
+	Output : The idea that is chosen at random.
 
-	Description :
+	Description : Find all of the ideas from the idea table that belong in our given jar.
+				  From these ideas, choose one at random and return the entire idea row for use.
 */
 function chooseIdea($jarName){
 	//Connect to our database
@@ -155,10 +153,12 @@ function chooseIdea($jarName){
 }
 
 //REMOVE IDEA
-/*
-	void removeIdea(ideaID, jarQuery, username);
-	
-	Inputs : A string of text that describes the idea, the user's ID, and attributes 
+/*	
+	Input : A string of text that describes the idea, the user's ID, and attributes 
+
+	Output : None
+
+	Description : Find the idea with the given ideaID and remove it from the idea table.
 */
 function removeIdea($ideaID){
 	//Connect to our database
@@ -172,7 +172,11 @@ function removeIdea($ideaID){
 /*
 	void createJar(jarName, jarQuery);
 	
-	Inputs : A string to represent our jar name and a list of attributes to add to the jar 
+	Inputs : A string for the user's identification (username) and a string for the name of the jar to be created.
+
+	Output : None
+
+	Description : Add the name of the jar given to our user's "jar ownership table".
 */
 function createJar($username, $jarName){
 
@@ -193,29 +197,40 @@ function createJar($username, $jarName){
 }
 
 
-//REMOVE JAR
-/*
-	void addIdea(ideaText, username, attributes);
-	
-	Inputs : A string of text that describes the idea, the user's ID, and attributes 
+//DELETE JAR
+/*	
+	Input : A string for the user's identification (username) and a string for the name of the jar to be deleted.
+
+	Output : None
+
+	Description : Remove all of the ideas contained in the jar from the idea table and then delete this jar
+				  from the "jar ownership table" of our user.
 */
 function deleteJar($username, $jarName){
 
 	connectToDatabase();
-
+	//For each of our ideas in the jar, find it in the table and remove this row
+	$ideas = getJar($jarName);
+	foreach($ideas as $idea){
+		removeIdea($idea['id']);
+	}
+	//Retrieve our user's row in the table to remove our jar name from the user's ownership list
 	$result = mysql_query("SELECT * FROM users WHERE username = '".$username."' ") or die(mysql_error());
 	$user = mysql_fetch_array($result);
-	
+
+	//Create an array out of our comma seperated jar name list
 	$userJarNames = explode(",", $user['jar_names']);
 
+	//Find the index of the jar to be deleted from the array, and then remove it from the ownership list
 	$removalIndex = array_search($jarName, $userJarNames);
 	if ($removalIndex != false){
     	unset($userJarNames[$removalIndex]);
 	}
 
+	//Turn the jar name array back into a comma seperated list
 	$commaSeperatedNames = implode(",", $userJarNames);
-
-	//Add our idea to the database
+	
+	//Update our user's ownership list after removing our deleted jar from it
 	mysql_query("UPDATE users SET jar_names = '".$commaSeperatedNames."' WHERE username = '".$username."'") or die(mysql_error());
 
 }
