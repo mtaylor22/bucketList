@@ -1,20 +1,14 @@
 <?php
 session_start();
+require 'functions.php';
+	connect();
 if (isset($_POST['submit'])){
-	mysql_connect("localhost", "admin", "ping") or die(mysql_error());
-	mysql_select_db("jar_project") or die(mysql_error());
-	$query = "SELECT * FROM users where username = '". $_POST['username'] ."'"; 
-	$result = mysql_query($query) or die(mysql_error());
-	$row = mysql_fetch_array($result) or die(mysql_error());
-	if ($row['password'] == $_POST['password']){
-		$_SESSION['loggedin'] = True;
-		$_SESSION['username'] = $_POST['username'];
-	}
+	check_login($_POST['username'], $_POST['password']);
 }
-if (isset($_SESSION['loggedin'])){
-	print '<h1>Hi, '. $_SESSION['username'] . '</h1>';
+$user = get_logged_user();
+if ($user)
+	print 'hi, your password is ' . $user['password'];
 
-}
 ?>
 
 <form method="POST" action="login.php">
